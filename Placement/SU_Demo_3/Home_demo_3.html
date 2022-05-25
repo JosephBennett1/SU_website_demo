@@ -6,51 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>MYSU - Home</title>
+
+<style>
+header {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
 </head>
 <header>
     <nav class="fixed w-full z-10 top-0 p-2 mt-0 bg-slate-50">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
-            <div class="p-2">
-              <div class="group inline-block relative">
-                <button>
-                 <div class="space-y-2">
-                      <span class="block w-7 h-1 bg-gray-600"></span>
-                      <span class="block w-7 h-1 bg-gray-600"></span>
-                      <span class="block w-7 h-1 bg-gray-600"></span>
-                 </div>
-                </button>
-                <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
-                   <li class="">
-                    <a
-                      class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="Home_demo_3.html"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="#"
-                      >Your SU</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="GetInvolved_Demo_3.html"
-                      >Get Involved</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="#"
-                      >Events</a
-                    >
-                  </li>
-                </ul>
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="Home_demo_3.html">Home</a>
+                <a href="#">Your SU</a>
+                <a href="GetInvolved_Demo_3.html">Get Involved</a>
+                <a href="#">Events</a>
               </div>
             </div>
+            <span class="bg-grey-50" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+            <script>
+            function openNav() {
+              document.getElementById("myNav").style.height = "100%";
+            }
+
+            function closeNav() {
+              document.getElementById("myNav").style.height = "0%";
+            }
+            </script>
+
             <a href="Home_demo_3.html" class="flex items-center">
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">University of England SU</span>
             </a>

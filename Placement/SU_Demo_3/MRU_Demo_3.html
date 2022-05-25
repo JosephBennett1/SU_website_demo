@@ -26,50 +26,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>MYSU - Get Involved</title>
+<style>
+header {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
 </head>
 <header>
-    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+    <nav class="fixed w-full z-10 top-0 p-2 mt-0 bg-slate-50">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
-            <div class="p-2">
-              <div class="group inline-block relative">
-                <button>
-                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                </button>
-                <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
-                  <li class="">
-                    <a
-                      class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="Home_demo_3.html"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="#"
-                      >Your SU</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="GetInvolved_Demo_3.html"
-                      >Get Involved</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="#"
-                      >Events</a
-                    >
-                  </li>
-                </ul>
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="Home_demo_3.html">Home</a>
+                <a href="#">Your SU</a>
+                <a href="GetInvolved_Demo_3.html">Get Involved</a>
+                <a href="#">Events</a>
               </div>
             </div>
-            <a href="Home_demo_3.html" class="flex items-center">
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">UoE SU</span>
-            </a>
+            <div>
+                <span class="font-extrabold " style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <span class="font-extrabold text-left">Univeristy of England SU</span>
+            </div>
+            
+            
+
+           <!--  <a href="Home_demo_3.html" class="flex items-center">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">University of England SU</span>
+            </a> -->
             <div class="flex md:order-2">
                 <div class="hidden relative mr-3 md:mr-0 md:block">
                     <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -83,6 +118,20 @@
 </header>
     
 <body>
+   <div class="w-full bg-cover bg-center" style="height:20rem; background-image: url(https://images.unsplash.com/photo-1636915798395-fb7001eeb434?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);">
+        <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
+            <div class="text-center">
+                 <h2 class="text-3xl font-extrabold text-white text-center dark:text-white sm:text-4xl">
+                    <span class="block">
+                        University of England
+                    </span>
+                    <span class="block text-cyan-300">
+                        Rugby Union.
+                    </span>
+                </h2>
+            </div>
+        </div>
+    </div>
   <div class="flex h-screen overflow-hidden bg-white rounded-lg">
     <div class="hidden md:flex md:flex-shrink-0">
         <div class="flex flex-col w-64">
@@ -135,17 +184,6 @@
         <main class="relative flex-1 overflow-y-auto focus:outline-none">
             <div>
 
-<section class="relative h-screen flex flex-col items-center justify-center text-center text-white py-0 px-3">
-    <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
-        <iframe class="min-w-full min-h-full"
-        src="https://www.youtube.com/embed/VxNgHbZ0kpk?autoplay=1&mute=1&loop=1">
-        </iframe>
-    </div>
-    <div class="video-content space-y-2">
-        <h1 class="font-light text-6xl">Rugby Union</h1>
-        <h3 class="font-light text-3xl">UoE Saints</h3>
-    </div>
-</section>
 <section>
     <div class="py-4">
         <div class="rounded-lg bg-gray-50">
@@ -280,7 +318,7 @@
 
                   <div class="flex min-h-screen overflow-hidden">
                     <div class="relative flex-1 hidden w-0 overflow-hidden lg:block">
-                      <img class="px-4" src="https://source.unsplash.com/OZ-hD7ndiEs" alt="">
+                      <img class="px-4" src="https://source.unsplash.com/OZ-hD7ndiEs/700x900" alt="">
                     </div>
                     <div class="flex flex-col justify-center flex-1 px-4 py-5 overflow-hidden sm:px-6 lg:flex-none 9*- xl:px-24">
                       <div class="w-full max-w-xl mx-auto lg:w-96">
