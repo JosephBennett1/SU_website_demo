@@ -30,34 +30,125 @@
     </div>
 </header>
 <body>
+<div class="container min-w-full justify-center">
+  <div x-data="{ open: false }" class="flex justify-center p-5">
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex justify-around sticky z-100 top-0 ">
+      <ul class="space-y-2 list-none lg:space-y-0 lg:items-center lg:inline-flex">
+        <li>
+          <a href="#" class="px-2 lg:px-6 py-6 text-sm border-b-2 border-transparent hover:border-blue-600 leading-[22px] md:px-3 text-gray-500 hover:text-blue-500"> Campaigns </a>
+        </li>
+        <li>
+          <a href="#" class="px-2 lg:px-6 py-6 text-sm border-b-2 border-transparent leading-[22px] md:px-3 text-gray-500 hover:text-blue-500 hover:border-blue-600"> Course Rep Hub </a>
+        </li>
+        <li>
+          <a href="#" class="px-2 lg:px-6 py-6 text-sm border-b-2 border-transparent leading-[22px] md:px-3 text-gray-500 hover:text-blue-500 hover:border-blue-600"> Elections </a>
+        </li>
+          <li>
+          <a href="#" class="px-2 lg:px-6 py-6 text-sm border-b-2 border-transparent leading-[22px] md:px-3 text-gray-500 hover:text-blue-500 hover:border-blue-600"> Liberation Networks </a>
+        </li>
+        <li>
+          <a href="#" class="px-2 lg:px-6 py-6 text-sm border-b-2 border-transparent leading-[22px] md:px-3 text-gray-500 hover:text-blue-500 hover:border-blue-600"> Student Council </a>
+        </li>
+        <li>
+          <a href="#" class="px-2 lg:px-6 py-6 text-sm border-b-2 border-transparent leading-[22px] md:px-3 text-gray-500 hover:text-blue-500 hover:border-blue-600"> Student say </a>
+        </li>
+        <li>
+          <a href="#" class="px-2 lg:px-6 py-6 text-sm border-b-2 border-transparent border-blue-600 leading-[22px] md:px-3 text-blue-500"> SUccess Stories </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
 <section>
     <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
         <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
-            <div class="p-6 hover:bg-gray-50">
-                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://source.unsplash.com/3wMYZ_eFiCs" alt="blog">
+            <div class="p-6 hover:bg-gray-200">
+                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://source.unsplash.com/11UhA-nsrdk" alt="blog">
 
-                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Short headline.</h1>
-                <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Charles Isherwood.</h1>
+                <div class="mt-4">
+                                  <!-- Button trigger modal -->
+                <button type="button" class="px-6
+                      py-2.5
+                      bg-blue-600
+                      text-white
+                      font-medium
+                      text-xs
+                      leading-tight
+                      uppercase
+                      rounded
+                      shadow-md
+                      hover:bg-blue-700 hover:shadow-lg
+                      focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                      active:bg-blue-800 active:shadow-lg
+                      transition
+                      duration-150
+                      ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Read more 
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-3 outline-blue-500 overflow-x-hidden overflow-y-auto pt-40 px-40"
+                  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog relative w-auto pointer-events-none">
+                    <div
+                      class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                      <div
+                        class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                        <h5 class="text-2xl font-medium leading-normal text-gray-800" id="exampleModalLabel">
+                            <span class="block">Charles Isherwood</span>
+                            <span class="block font-light text-xl"><b>Role(s):</b> SU President, Trustee, Course Rep, Football 3rd Team Captain, SHSS Rep on Student Council, SU Event staff, SU helper </span>
+                          </h5>
+                        
+                        <button type="button"
+                          class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                          data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body relative p-4">
+                          
+                        <div class="flex-row">
+                            <img src="https://source.unsplash.com/11UhA-nsrdk" class="lg:h-48 md:h-36 rounded-br-lg">
+                            <h1>Hello please appear on the right f the image!!</h1>
+                        </div>
+
+                      </div>
+                      <div
+                        class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+                        <button type="button" class="px-6
+                          py-2.5
+                          bg-blue-500
+                          text-white
+                          font-medium
+                          text-xs
+                          leading-tight
+                          uppercase
+                          rounded
+                          shadow-md
+                          hover:bg-blue-800 hover:shadow-lg
+                          focus:bg-blue-800 focus:shadow-lg focus:outline-none focus:ring-0
+                          active:bg-blue-800 active:shadow-lg
+                          transition
+                          duration-150
+                          ease-in-out" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+            <div class="p-6 hover:bg-gray-200">
+                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://source.unsplash.com/CDttlHZKOrU" alt="blog">
+
+                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Katie Armitage.</h1>
 
                 <div class="mt-4">
                     <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
                 </div>
             </div>
-            <div class="p-6">
-                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://source.unsplash.com/bqe0J0b26RQ" alt="blog">
+            <div class="p-6 hover:bg-gray-200">
+                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://source.unsplash.com/lQx7c6JyF_U" alt="blog">
 
-                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Short headline.</h1>
-                <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
-
-                <div class="mt-4">
-                    <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
-                </div>
-            </div>
-            <div class="p-6">
-                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://source.unsplash.com/bqe0J0b26RQ" alt="blog">
-
-                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Short headline.</h1>
-                <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Lucy Farrar.</h1>
 
                 <div class="mt-4">
                     <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
@@ -69,31 +160,28 @@
 <section>
     <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
         <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
-            <div class="p-6">
-                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://source.unsplash.com/bqe0J0b26RQ" alt="blog">
+            <div class="p-6 hover:bg-gray-200">
+                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://source.unsplash.com/SpIKPT8zeAs" alt="blog">
 
-                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Short headline.</h1>
-                <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
-
-                <div class="mt-4">
-                    <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
-                </div>
-            </div>
-            <div class="p-6">
-                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://source.unsplash.com/bqe0J0b26RQ" alt="blog">
-
-                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Short headline.</h1>
-                <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Matthew Baxter.</h1>
 
                 <div class="mt-4">
                     <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
                 </div>
             </div>
-            <div class="p-6">
+            <div class="p-6 hover:bg-gray-200">
                 <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://source.unsplash.com/bqe0J0b26RQ" alt="blog">
 
-                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Short headline.</h1>
-                <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Rachael Chapman.</h1>
+
+                <div class="mt-4">
+                    <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                </div>
+            </div>
+            <div class="p-6 hover:bg-gray-200">
+                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://source.unsplash.com/2IdjqOIFIWM" alt="blog">
+
+                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Thomas Haigh.</h1>
 
                 <div class="mt-4">
                     <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
@@ -102,8 +190,54 @@
         </div>
     </div>
 </section>
+<section class="text-gray-600 body-font relative">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Submit your own!</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Have you got your own #SUccessStory to share? </p>
+    </div>
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+            <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+            <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <div class="relative">
+            <label for="message" class="leading-7 text-sm text-gray-600">What skills did you gain or build upon during your role?</label>
+            <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+        </div>
+          <div class="p-2 w-full">
+          <div class="relative">
+            <label for="message" class="leading-7 text-sm text-gray-600">What impact has this had on your work, education, or day-to-day life?</label>
+            <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+        </div>
+          <div class="p-2 w-full">
+          <div class="relative">
+            <label for="message" class="leading-7 text-sm text-gray-600">Tell us your favourite thing about the Students' Union!</label>
+            <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <button class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"> </script>
 </body>
-<footer class="text-gray-600 body-font bg-gray-200">
+<footer class="text-gray-600 body-font bg-gradient-to-b from-cyan-300 to-blue-300">
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col ">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
@@ -181,7 +315,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-gray-200">
+
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
       <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Leeds Trinity University </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
@@ -209,6 +343,6 @@
         </a>
       </span>
     </div>
-  </div>
+
 </footer>
 </html>
