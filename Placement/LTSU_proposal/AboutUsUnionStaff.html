@@ -9,27 +9,171 @@
     <title>LTSU - Union Staff</title>
 </head>
 <header>
+    <!--Modal-->
+    <div class="modal opacity-0 z-50 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center bg-gradient-to-b from-cyan-50 to-blue-200">
+      <div class="modal-overlay absolute w-full h-full opacity-95"></div>
+
+      <div class="modal-container fixed w-full h-full z-50 overflow-y-auto ">
+
+        <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-black text-sm z-50">
+          <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 18 18">
+            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          (Esc)
+        </div>
+
+        <!-- Add margin if you want to see grey behind the modal-->
+        <div class="modal-content container mx-auto h-auto text-left p-4">
+
+          <!--Title-->
+          <div class="flex justify-between items-center pb-2">
+            <img src="ltsuLogo.png">
+          </div>
+
+          <!--Body-->
+           <div class=" flex items-center px-4 py-8 mx-auto">
+                <div class="flex-col w-full mb-8 sm:px-10 lg:px-52 prose">
+                    <div class="relative justify-center lg:px-4">
+                        <div class="lg:grid lg:grid-cols-3">
+                            <div class="p-8">
+                                <a href="index.html" class="block text-blue-700 text-3xl font-extrabold italic underline ">Home</a>
+                                <p>&nbsp;</p> 
+                                <h1 href="#" class="block text-blue-700 text-3xl font-medium underline">About Us</h1>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="italic font-sans text-blue-500 ">Shape Your union</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">Sustainability</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">Trustees</a>
+                                    </li>
+                                     <li>
+                                        <a href="AboutUsUnionStaff.html">Union Staff</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">Work For Us</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">Your union</a>
+                                    </li>
+                                </ul>
+                                <p>&nbsp;</p>  
+
+                                  <h1 href="#" class="block text-blue-700 text-3xl font-medium underline">Activities</h1>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Awards Criteria</a>
+                                        </li>
+                                         <li>
+                                            <a href="#">Events</a>
+                                        </li>
+                                         <li>
+                                            <a href="#">Freshers 2022</a>
+                                        </li>
+                                         <li>
+                                            <a href="Activities.html">Societies</a>
+                                        </li>
+                                         <li>
+                                            <a href="#">Clubs</a>
+                                        </li>
+                                    </ul>
+
+                            </div>
+                            <div class="p-8">
+                                <h1 href="#" class="block text-blue-700 text-3xl font-medium underline">Support</h1>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="italic font-sans text-blue-500 ">Academic Appeal</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">Book a 1 To 1</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">Health</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">Resource Bank</a>
+                                    </li>
+                                     <li>
+                                        <a href="SupportStudenthousing.html">Student Housing</a>
+                                    </li>
+                                </ul>
+                                <p>&nbsp;</p>  
+
+                                  <h1 href="#" class="block text-blue-700 text-3xl font-medium underline">Student voice</h1>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Campains</a>
+                                        </li>
+                                         <li>
+                                            <a href="#">Course Rep hub</a>
+                                        </li>
+                                         <li>
+                                            <a href="#">Elections</a>
+                                        </li>
+                                         <li>
+                                            <a href="Activities.html">Liberation Networks</a>
+                                        </li>
+                                         <li>
+                                            <a href="#">Student Council</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Student Say</a>
+                                        </li>
+                                        <li>
+                                            <a href="SUccessStories.html">SUccess Stories</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                              <div class="p-8">
+                                  <h1 href="#" class="block text-blue-700 text-3xl font-medium underline">Eat, Drink, Shop</h1>
+                                    <ul>
+                                        <li>
+                                            <a href="#">StUdio</a>
+                                        </li>
+                                         <li>
+                                            <a href="#">SU Shop</a>
+                                        </li>
+                                         <li>
+                                            <a href="#">TOTUM Discount</a>
+                                        </li>
+                                    </ul>
+                                  <p>&nbsp;</p>
+                                  <a href="index.html" class="block text-blue-700 text-3xl font-extrabold italic underline ">Highlights</a>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</header>
+<body>
+<!--Beginning of the top page banner-->
     <div class="w-full bg-cover bg-center" style="height:30rem; background-image: url(https://images.unsplash.com/photo-1526637201259-da59cb348242?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674);">
-        <div class="flex items-center justify-left pl-40 h-full w-full bg-gray-900 bg-opacity-75">
-            <div class="text-center">
+        <div class="bg-gray-900 bg-opacity-75 w-full h-full">
+        <button class="modal-open bg-blue-700 border-r border-b border-blue-500 rounded-br-lg text-white  font-bold py-2 px-4 ">Menu</button>
+
+        <div class="flex items-center justify-left pl-40 h-full w-full">
+             <div class="text-center">
                  <h2 class="text-6xl text-left font-normal font-sans text-white dark:text-white">
-<!--
                     <span class="block text-3xl">
-                        Leeds Trinity
-                    </span>
--->
-                    <span class="block text-3xl">
-                        Leeds Trinity Students&#x27; Union
+                        Leeds Trinity 
                     </span>
                      <span class="block text-blue-700 font-bold bg-blue-300 bg-opacity-75 rounded-br-lg p-2">
-                        Union Staff
+                        Students' Union
                     </span>
                 </h2>
             </div>
         </div>
+        </div>
     </div>
-</header>
-<body>
+<!--End of the top page banner-->
+<!--Beggining of the top navigation-->
   <div class="container min-w-full justify-center">
   <div x-data="{ open: false }" class="flex justify-center p-5">
     <nav :class="{'flex': open, 'hidden': !open}" class="flex justify-around sticky z-100 top-0 ">
@@ -56,6 +200,7 @@
     </nav>
   </div>
 </div>
+<!--End of the top navigation-->
     
 <!--start of union staff section --> 
 <section class="text-gray-600 body-font">
@@ -243,7 +388,7 @@
     </div>
 </section>
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"> </script>
-</body>
+<!--Beggining of the footer-->
 <footer class="text-gray-600 body-font bg-gradient-to-b from-cyan-300 to-blue-300">
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col ">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
@@ -352,4 +497,47 @@
     </div>
 
 </footer>
+<!--JavaScript for the pop-up modal for further staff information-->
+<script>
+  var openmodal = document.querySelectorAll('.modal-open')
+  for (var i = 0; i < openmodal.length; i++) {
+    openmodal[i].addEventListener('click', function(event){
+  	event.preventDefault()
+  	toggleModal()
+    })
+  }
+  
+  const overlay = document.querySelector('.modal-overlay')
+  overlay.addEventListener('click', toggleModal)
+  
+  var closemodal = document.querySelectorAll('.modal-close')
+  for (var i = 0; i < closemodal.length; i++) {
+    closemodal[i].addEventListener('click', toggleModal)
+  }
+  
+  document.onkeydown = function(evt) {
+    evt = evt || window.event
+    var isEscape = false
+    if ("key" in evt) {
+  	isEscape = (evt.key === "Escape" || evt.key === "Esc")
+    } else {
+  	isEscape = (evt.keyCode === 27)
+    }
+    if (isEscape && document.body.classList.contains('modal-active')) {
+  	toggleModal()
+    }
+  };
+  
+  
+  function toggleModal () {
+    const body = document.querySelector('body')
+    const modal = document.querySelector('.modal')
+    modal.classList.toggle('opacity-0')
+    modal.classList.toggle('pointer-events-none')
+    body.classList.toggle('modal-active')
+  }
+  
+   
+</script>
+</body>
 </html>
